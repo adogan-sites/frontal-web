@@ -90,7 +90,7 @@ Projeler
 </a> </nav> </div> </header> ${renderScript($$result, "/app/site/src/components/Header.astro?astro&type=script&index=0&lang.ts")}`;
 }, "/app/site/src/components/Header.astro", void 0);
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden pt-20"> <!-- Background Image --> <div class="absolute inset-0 z-0"> <img src="https://images.unsplash.com/photo-1769008302060-74c03f712dfb?w=1920" alt="Modern Architecture" class="w-full h-full object-cover"> <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div> </div> <!-- Content --> <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white"> <div class="max-w-3xl"> <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6">
+  return renderTemplate`${maybeRenderHead()}<section id="hero" aria-label="Ana Sayfa" class="relative h-screen flex items-center justify-center overflow-hidden pt-20"> <!-- Background Image --> <div class="absolute inset-0 z-0"> <img src="https://images.unsplash.com/photo-1769008302060-74c03f712dfb?w=1920" alt="Modern Architecture" class="w-full h-full object-cover"> <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div> </div> <!-- Content --> <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white"> <div class="max-w-3xl"> <h1 class="text-5xl md:text-6xl lg:text-7xl mb-6">
 Alüminyum Cephe Sistemlerinde
 <span class="block text-slate-300">Öncü Çözümler</span> </h1> <p class="text-xl md:text-2xl mb-8 text-gray-200">
 Mimari vizyonlarınızı gerçeğe dönüştürüyoruz. Modern teknoloji ve
@@ -103,7 +103,7 @@ Projelerimizi İnceleyin
 }, "/app/site/src/components/Hero.astro", void 0);
 const $$About = createComponent(($$result, $$props, $$slots) => {
   const { company: company2 } = siteData;
-  return renderTemplate`${maybeRenderHead()}<section id="about" class="py-12 md:py-24 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center"> <!-- Left Side - Image --> <div class="relative order-2 md:order-1"> <div class="relative h-64 md:h-[500px] rounded-xl overflow-hidden shadow-2xl border border-slate-100"> <img src="https://images.unsplash.com/photo-1526913051154-293e311637e9?w=800" alt="Frontal Alüminyum" class="w-full h-full object-cover"> <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div> </div> <!-- Floating Card --> <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-slate-900 text-white p-4 md:p-6 rounded-lg shadow-2xl border border-white/10"> <div class="text-2xl md:text-4xl font-light">${company2.experienceYears}</div> <div class="text-[10px] md:text-sm uppercase tracking-widest font-bold text-slate-400">Yıllık Deneyim</div> </div> </div> <!-- Right Side - Content --> <div class="order-1 md:order-2"> <h2 class="text-3xl md:text-5xl mb-4 md:mb-6 text-slate-900 font-light tracking-tight"> ${company2.aboutTitle} </h2> <div class="w-16 h-1 bg-slate-400 mb-6 md:mb-8"></div> <div class="space-y-4 md:space-y-6 text-slate-600 font-light leading-relaxed"> <p class="text-base md:text-lg"> ${company2.aboutParagraph1} </p> <p class="text-sm md:text-base hidden sm:block"> ${company2.aboutParagraph2} </p> <p class="text-sm md:text-base"> ${company2.aboutParagraph3} </p> </div> <!-- Stats Grid --> <div class="grid grid-cols-2 gap-4 md:gap-8 mt-8 md:mt-12"> <div class="flex items-center space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg bg-slate-50 md:bg-transparent"> <div class="flex-shrink-0"> <div class="w-10 h-10 md:w-14 md:h-14 bg-white border border-slate-100 rounded-xl flex items-center justify-center shadow-sm"> <svg class="h-5 w-5 md:h-6 md:w-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path> </svg> </div> </div> <div> <div class="text-xl md:text-2xl font-semibold text-slate-900 leading-none mb-1">${company2.experienceYears}</div> <div class="text-[10px] md:text-xs uppercase tracking-wider text-slate-500 font-bold">Yıllık Tecrübe</div> </div> </div> <div class="flex items-center space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg bg-slate-50 md:bg-transparent"> <div class="flex-shrink-0"> <div class="w-10 h-10 md:w-14 md:h-14 bg-white border border-slate-100 rounded-xl flex items-center justify-center shadow-sm"> <svg class="h-5 w-5 md:h-6 md:w-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path> </svg> </div> </div> <div> <div class="text-xl md:text-2xl font-semibold text-slate-900 leading-none mb-1">${company2.projectCount}</div> <div class="text-[10px] md:text-xs uppercase tracking-wider text-slate-500 font-bold">Tamamlanan Proje</div> </div> </div> </div> </div> </div> </div> </section>`;
+  return renderTemplate`${maybeRenderHead()}<section id="about" aria-label="Hakkımızda" class="py-12 md:py-24 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="grid md:grid-cols-2 gap-8 md:gap-16 items-center"> <!-- Left Side - Image --> <div class="relative order-2 md:order-1"> <div class="relative h-64 md:h-[500px] rounded-xl overflow-hidden shadow-2xl border border-slate-100"> <img src="https://images.unsplash.com/photo-1526913051154-293e311637e9?w=800" alt="Frontal Alüminyum" class="w-full h-full object-cover"> <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div> </div> <!-- Floating Card --> <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-slate-900 text-white p-4 md:p-6 rounded-lg shadow-2xl border border-white/10"> <div class="text-2xl md:text-4xl font-light">${company2.experienceYears}</div> <div class="text-[10px] md:text-sm uppercase tracking-widest font-bold text-slate-400">Yıllık Deneyim</div> </div> </div> <!-- Right Side - Content --> <div class="order-1 md:order-2"> <h2 class="text-3xl md:text-5xl mb-4 md:mb-6 text-slate-900 font-light tracking-tight"> ${company2.aboutTitle} </h2> <div class="w-16 h-1 bg-slate-400 mb-6 md:mb-8"></div> <div class="space-y-4 md:space-y-6 text-slate-600 font-light leading-relaxed"> <p class="text-base md:text-lg"> ${company2.aboutParagraph1} </p> <p class="text-sm md:text-base hidden sm:block"> ${company2.aboutParagraph2} </p> <p class="text-sm md:text-base"> ${company2.aboutParagraph3} </p> </div> <!-- Stats Grid --> <div class="grid grid-cols-2 gap-4 md:gap-8 mt-8 md:mt-12"> <div class="flex items-center space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg bg-slate-50 md:bg-transparent"> <div class="flex-shrink-0"> <div class="w-10 h-10 md:w-14 md:h-14 bg-white border border-slate-100 rounded-xl flex items-center justify-center shadow-sm"> <svg class="h-5 w-5 md:h-6 md:w-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path> </svg> </div> </div> <div> <div class="text-xl md:text-2xl font-semibold text-slate-900 leading-none mb-1">${company2.experienceYears}</div> <div class="text-[10px] md:text-xs uppercase tracking-wider text-slate-500 font-bold">Yıllık Tecrübe</div> </div> </div> <div class="flex items-center space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg bg-slate-50 md:bg-transparent"> <div class="flex-shrink-0"> <div class="w-10 h-10 md:w-14 md:h-14 bg-white border border-slate-100 rounded-xl flex items-center justify-center shadow-sm"> <svg class="h-5 w-5 md:h-6 md:w-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path> </svg> </div> </div> <div> <div class="text-xl md:text-2xl font-semibold text-slate-900 leading-none mb-1">${company2.projectCount}</div> <div class="text-[10px] md:text-xs uppercase tracking-wider text-slate-500 font-bold">Tamamlanan Proje</div> </div> </div> </div> </div> </div> </div> </section>`;
 }, "/app/site/src/components/About.astro", void 0);
 const services = [
   {
@@ -204,7 +204,18 @@ var _a$2;
 const $$Services = createComponent(($$result, $$props, $$slots) => {
   var _a2;
   const subtitle = (_a2 = siteData.sections) == null ? void 0 : _a2.servicesSubtitle;
-  return renderTemplate(_a$2 || (_a$2 = __template$2(["", '<section id="services" class="py-10 md:py-24 bg-slate-50" data-astro-cid-g5jplrhu> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-astro-cid-g5jplrhu> <!-- Section Header --> <div class="text-center mb-8 md:mb-20" data-astro-cid-g5jplrhu> <h2 class="text-2xl md:text-5xl mb-3 text-slate-900 font-light tracking-tight" data-astro-cid-g5jplrhu>\nFaaliyet Alanları\n</h2> <div class="w-12 h-0.5 bg-slate-400 mx-auto mb-4 md:mb-6" data-astro-cid-g5jplrhu></div> <p class="text-xs md:text-lg text-slate-500 max-w-2xl mx-auto font-light px-4" data-astro-cid-g5jplrhu> ', ' </p> </div> <!-- Services Grid --> <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8" data-astro-cid-g5jplrhu> ', ' </div> </div> </section>  <!-- Service Detail Modal --> <div id="service-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-2 md:p-4 overflow-hidden" data-astro-cid-g5jplrhu> <div id="service-modal-overlay" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" data-astro-cid-g5jplrhu></div> <!-- Close Button - Fixed Position --> <button id="service-modal-close" class="fixed top-3 right-3 md:top-4 md:right-4 p-2 bg-slate-900/90 backdrop-blur-md text-white rounded-full hover:bg-slate-800 transition-colors z-[110] shadow-lg" data-astro-cid-g5jplrhu> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-g5jplrhu> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-g5jplrhu></path> </svg> </button> <div id="service-modal-content" class="relative bg-white w-full max-w-2xl rounded-2xl overflow-hidden overflow-x-hidden shadow-2xl z-10 max-h-[90vh] overflow-y-auto" data-astro-cid-g5jplrhu> <div id="service-modal-body" data-astro-cid-g5jplrhu></div> </div> </div> <!-- Lightbox --> <div id="service-lightbox" class="fixed inset-0 z-[200] hidden overflow-hidden p-2 md:p-4" data-astro-cid-g5jplrhu> <div id="service-lightbox-overlay" class="absolute inset-0 bg-black/80" data-astro-cid-g5jplrhu></div> <button id="service-lightbox-close" class="fixed top-3 right-3 md:top-4 md:right-4 p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10" data-astro-cid-g5jplrhu> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-g5jplrhu> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-g5jplrhu></path> </svg> </button> <div class="relative w-full h-full flex items-center justify-center p-4 md:p-16" data-astro-cid-g5jplrhu> <img id="service-lightbox-image" class="max-w-full max-h-full object-contain select-none" alt="" data-astro-cid-g5jplrhu> </div> </div> <script>(function(){', `
+  return renderTemplate(_a$2 || (_a$2 = __template$2(["", '<section id="services" aria-label="Faaliyet Alanları" class="py-10 md:py-24 bg-slate-50" data-astro-cid-g5jplrhu> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-astro-cid-g5jplrhu> <!-- Section Header --> <div class="text-center mb-8 md:mb-20" data-astro-cid-g5jplrhu> <h2 class="text-2xl md:text-5xl mb-3 text-slate-900 font-light tracking-tight" data-astro-cid-g5jplrhu>\nFaaliyet Alanları\n</h2> <div class="w-12 h-0.5 bg-slate-400 mx-auto mb-4 md:mb-6" data-astro-cid-g5jplrhu></div> <p class="text-xs md:text-lg text-slate-500 max-w-2xl mx-auto font-light px-4" data-astro-cid-g5jplrhu> ', ' </p> </div> <!-- Services Grid --> <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8" data-astro-cid-g5jplrhu> ', ' </div> </div> </section>  <!-- Service Detail Modal --> <div id="service-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-2 md:p-4 overflow-hidden" data-astro-cid-g5jplrhu> <div id="service-modal-overlay" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" data-astro-cid-g5jplrhu></div> <!-- Close Button - Fixed Position --> <button id="service-modal-close" class="fixed top-3 right-3 md:top-4 md:right-4 p-2 bg-slate-900/90 backdrop-blur-md text-white rounded-full hover:bg-slate-800 transition-colors z-[110] shadow-lg" data-astro-cid-g5jplrhu> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-g5jplrhu> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-g5jplrhu></path> </svg> </button> <div id="service-modal-content" class="relative bg-white w-full max-w-2xl rounded-2xl overflow-hidden overflow-x-hidden shadow-2xl z-10 max-h-[90vh] overflow-y-auto" data-astro-cid-g5jplrhu> <div id="service-modal-body" data-astro-cid-g5jplrhu></div> </div> </div> <!-- Lightbox --> <div id="service-lightbox" class="fixed inset-0 z-[200] hidden overflow-hidden p-2 md:p-4" data-astro-cid-g5jplrhu> <div id="service-lightbox-overlay" class="absolute inset-0 bg-black/80" data-astro-cid-g5jplrhu></div> <button id="service-lightbox-close" class="fixed top-3 right-3 md:top-4 md:right-4 p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10" data-astro-cid-g5jplrhu> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-g5jplrhu> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-g5jplrhu></path> </svg> </button> <div class="relative w-full h-full flex items-center justify-center p-4 md:p-16" data-astro-cid-g5jplrhu> <img id="service-lightbox-image" class="max-w-full max-h-full object-contain select-none" alt="" data-astro-cid-g5jplrhu> </div> </div> <script>(function(){', `
+  // HTML escape - XSS koruması
+  function escService(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   // Build lookup by id
   var serviceDetails = {};
   var _serviceLightboxOpen = false;
@@ -227,7 +238,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
         '<svg class="h-4 w-4 md:h-5 md:w-5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
         '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>' +
         '</svg>' +
-        '<span class="text-sm md:text-base text-slate-700">' + details[i] + '</span>' +
+        '<span class="text-sm md:text-base text-slate-700">' + escService(details[i]) + '</span>' +
         '</div>';
     }
 
@@ -235,10 +246,10 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
 
     modalBody.innerHTML =
       '<div class="relative h-48 md:h-64 cursor-pointer" id="service-lightbox-trigger">' +
-        '<img src="' + imgSrc + '" alt="' + service.title + '" class="w-full h-full object-cover" />' +
+        '<img src="' + imgSrc + '" alt="' + escService(service.title) + '" class="w-full h-full object-cover" />' +
         '<div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>' +
         '<div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">' +
-          '<h3 class="text-xl md:text-3xl text-white font-light leading-tight">' + service.title + '</h3>' +
+          '<h3 class="text-xl md:text-3xl text-white font-light leading-tight">' + escService(service.title) + '</h3>' +
         '</div>' +
         '<div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black/20">' +
           '<div class="bg-white/90 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-slate-900">' +
@@ -250,7 +261,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
         '</div>' +
       '</div>' +
       '<div class="p-4 md:p-10">' +
-        '<p class="text-slate-600 text-sm md:text-lg font-light leading-relaxed mb-6 md:mb-8">' + service.description + '</p>' +
+        '<p class="text-slate-600 text-sm md:text-lg font-light leading-relaxed mb-6 md:mb-8">' + escService(service.description) + '</p>' +
         '<div class="space-y-4">' +
           '<h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 mb-4 border-b border-slate-100 pb-2">Sistem Detayları &amp; Uygulama</h4>' +
           '<div class="grid sm:grid-cols-2 gap-3 md:gap-4">' + detailsHtml + '</div>' +
@@ -356,7 +367,7 @@ const $$Projects = createComponent(($$result, $$props, $$slots) => {
   var _a2;
   const subtitle = (_a2 = siteData.sections) == null ? void 0 : _a2.projectsSubtitle;
   const categories = ["Tümü", ...new Set(projects.map((p) => p.category))];
-  return renderTemplate(_a$1 || (_a$1 = __template$1(["", '<section id="projects" class="py-10 md:py-24 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- Section Header --> <div class="text-center mb-8 md:mb-16"> <h2 class="text-2xl md:text-5xl mb-3 text-slate-900 font-light tracking-tight">\nProjelerimiz\n</h2> <div class="w-12 h-0.5 bg-slate-400 mx-auto mb-4 md:mb-6"></div> <p class="text-xs md:text-lg text-slate-500 max-w-2xl mx-auto font-light px-4"> ', ' </p> </div> <!-- Filters --> <div class="flex flex-col gap-4 mb-8 md:mb-16 items-center"> <div class="w-full overflow-x-auto no-scrollbar"> <div class="flex justify-center gap-3 px-4 min-w-max" id="project-filters"> ', ' </div> </div> </div> <!-- Projects Grid --> <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8" id="projects-grid"> ', ' </div> <!-- No Results --> <div id="no-results" class="text-center py-10 hidden"> <p class="text-slate-400 font-light text-xs">Sonuç bulunamadı.</p> </div> </div> </section> <script>(function(){', "\n\n  function filterProjects(category) {\n    // GSAP varsa animasyonlu filtreleme animations.js tarafindan yapilir\n    if (window.gsap) return;\n\n    var cards = document.querySelectorAll('.project-card');\n    var noResults = document.getElementById('no-results');\n    var visibleCount = 0;\n\n    cards.forEach(function(card) {\n      var cardCategory = card.getAttribute('data-category');\n      if (category === 'Tümü' || cardCategory === category) {\n        card.style.display = 'flex';\n        visibleCount++;\n      } else {\n        card.style.display = 'none';\n      }\n    });\n\n    if (visibleCount === 0 && noResults) {\n      noResults.classList.remove('hidden');\n    } else if (noResults) {\n      noResults.classList.add('hidden');\n    }\n  }\n\n  // Aktif filtre class'lari (after: pseudo-element ile underline)\n  var activeClasses = ['active', 'text-slate-900', 'after:absolute', 'after:bottom-0', 'after:left-0', 'after:w-full', 'after:h-0.5', 'after:bg-slate-900'];\n  var inactiveClasses = ['text-slate-400'];\n\n  function setFilterActive(button) {\n    inactiveClasses.forEach(function(c) { button.classList.remove(c); });\n    activeClasses.forEach(function(c) { button.classList.add(c); });\n  }\n\n  function setFilterInactive(button) {\n    activeClasses.forEach(function(c) { button.classList.remove(c); });\n    inactiveClasses.forEach(function(c) { button.classList.add(c); });\n  }\n\n  function initProjectFilters() {\n    var filters = document.querySelectorAll('.project-filter');\n    filters.forEach(function(filter) {\n      filter.addEventListener('click', function() {\n        // Tum filtreleri inactive yap\n        filters.forEach(function(f) {\n          setFilterInactive(f);\n        });\n        // Tiklanan filtreyi active yap\n        setFilterActive(this);\n\n        var category = this.getAttribute('data-category');\n        if (category) {\n          filterProjects(category);\n        }\n      });\n    });\n  }\n\n  function initProjectCards() {\n    const cards = document.querySelectorAll('.project-card');\n    cards.forEach(function(card) {\n      card.addEventListener('click', function() {\n        const projectId = this.getAttribute('data-project-id');\n        const projectSlug = this.getAttribute('data-project-slug');\n        if (projectId && projectSlug) {\n          // Update URL using router\n          if (window.router) {\n            window.router.navigate(basePath + '/projeler/' + projectSlug);\n          } else {\n            window.location.href = basePath + '/projeler/' + projectSlug;\n          }\n        }\n      });\n    });\n  }\n\n  // Make projects data available globally for router\n  window.__PROJECTS_DATA__ = projectsData;\n\n  if (document.readyState === 'loading') {\n    document.addEventListener('DOMContentLoaded', function() {\n      initProjectFilters();\n      initProjectCards();\n    });\n  } else {\n    initProjectFilters();\n    initProjectCards();\n  }\n})();<\/script>"])), maybeRenderHead(), subtitle, categories.map((category) => renderTemplate`<button${addAttribute(`project-filter text-[10px] md:text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${category === "Tümü" ? "text-slate-900 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-slate-900 active" : "text-slate-400 hover:text-slate-600"}`, "class")}${addAttribute(category, "data-category")}> ${category} </button>`), projects.map((project) => renderTemplate`<div class="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 flex flex-col h-full project-card"${addAttribute(project.id, "data-project-id")}${addAttribute(project.slug, "data-project-slug")}${addAttribute(project.category, "data-category")}> <!-- Image --> <div class="relative h-24 md:h-64 overflow-hidden"> <img${addAttribute(withBase(project.image), "src")}${addAttribute(project.title, "alt")} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"> <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/30 transition-colors duration-500"></div> </div> <!-- Content --> <div class="p-2 md:p-8 flex flex-col flex-grow"> <span class="text-[7px] md:text-[10px] font-bold tracking-[0.1em] md:tracking-[0.2em] text-slate-400 uppercase mb-0.5 md:mb-3 block truncate"> ${project.category} </span> <h3 class="text-[10px] md:text-xl font-semibold mb-0.5 md:mb-3 text-slate-900 leading-tight group-hover:text-slate-700 transition-colors line-clamp-1 md:line-clamp-none"> ${project.title} </h3> <!-- Mobilde 1 satir aciklama --> <p class="text-[8px] md:text-sm text-slate-500 font-light leading-relaxed mb-1 md:mb-6 line-clamp-1 md:line-clamp-2"> ${project.description} </p> <div class="mt-auto flex flex-col md:flex-row md:items-center md:justify-between gap-0.5 md:gap-0"> <!-- Konum - mobilde tam gorunsun --> <div class="flex items-center gap-0.5 md:gap-1 text-[7px] md:text-[10px] text-slate-400 md:order-2"> <svg class="h-2 w-2 md:h-3 md:w-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> <span class="truncate">${project.location}</span> </div> <div class="hidden md:flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-900 transition-colors md:order-1"> <span>Detaylar</span> <svg class="h-4 w-4 group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </div> </div> </div> </div>`), defineScriptVars({ projectsData: projects, basePath }));
+  return renderTemplate(_a$1 || (_a$1 = __template$1(["", '<section id="projects" aria-label="Projelerimiz" class="py-10 md:py-24 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- Section Header --> <div class="text-center mb-8 md:mb-16"> <h2 class="text-2xl md:text-5xl mb-3 text-slate-900 font-light tracking-tight">\nProjelerimiz\n</h2> <div class="w-12 h-0.5 bg-slate-400 mx-auto mb-4 md:mb-6"></div> <p class="text-xs md:text-lg text-slate-500 max-w-2xl mx-auto font-light px-4"> ', ' </p> </div> <!-- Filters --> <div class="flex flex-col gap-4 mb-8 md:mb-16 items-center"> <div class="w-full overflow-x-auto no-scrollbar"> <div class="flex justify-center gap-3 px-4 min-w-max" id="project-filters"> ', ' </div> </div> </div> <!-- Projects Grid --> <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8" id="projects-grid"> ', ' </div> <!-- No Results --> <div id="no-results" class="text-center py-10 hidden"> <p class="text-slate-400 font-light text-xs">Sonuç bulunamadı.</p> </div> </div> </section> <script>(function(){', "\n\n  function filterProjects(category) {\n    // GSAP varsa animasyonlu filtreleme animations.js tarafindan yapilir\n    if (window.gsap) return;\n\n    var cards = document.querySelectorAll('.project-card');\n    var noResults = document.getElementById('no-results');\n    var visibleCount = 0;\n\n    cards.forEach(function(card) {\n      var cardCategory = card.getAttribute('data-category');\n      if (category === 'Tümü' || cardCategory === category) {\n        card.style.display = 'flex';\n        visibleCount++;\n      } else {\n        card.style.display = 'none';\n      }\n    });\n\n    if (visibleCount === 0 && noResults) {\n      noResults.classList.remove('hidden');\n    } else if (noResults) {\n      noResults.classList.add('hidden');\n    }\n  }\n\n  // Aktif filtre class'lari (after: pseudo-element ile underline)\n  var activeClasses = ['active', 'text-slate-900', 'after:absolute', 'after:bottom-0', 'after:left-0', 'after:w-full', 'after:h-0.5', 'after:bg-slate-900'];\n  var inactiveClasses = ['text-slate-400'];\n\n  function setFilterActive(button) {\n    inactiveClasses.forEach(function(c) { button.classList.remove(c); });\n    activeClasses.forEach(function(c) { button.classList.add(c); });\n  }\n\n  function setFilterInactive(button) {\n    activeClasses.forEach(function(c) { button.classList.remove(c); });\n    inactiveClasses.forEach(function(c) { button.classList.add(c); });\n  }\n\n  function initProjectFilters() {\n    var filters = document.querySelectorAll('.project-filter');\n    filters.forEach(function(filter) {\n      filter.addEventListener('click', function() {\n        // Tum filtreleri inactive yap\n        filters.forEach(function(f) {\n          setFilterInactive(f);\n        });\n        // Tiklanan filtreyi active yap\n        setFilterActive(this);\n\n        var category = this.getAttribute('data-category');\n        if (category) {\n          filterProjects(category);\n        }\n      });\n    });\n  }\n\n  function initProjectCards() {\n    var cards = document.querySelectorAll('.project-card');\n    cards.forEach(function(card) {\n      card.addEventListener('click', function() {\n        var projectId = this.getAttribute('data-project-id');\n        var projectSlug = this.getAttribute('data-project-slug');\n        if (projectId && projectSlug) {\n          // Update URL using router\n          if (window.router) {\n            window.router.navigate(basePath + '/projeler/' + projectSlug);\n          } else {\n            window.location.href = basePath + '/projeler/' + projectSlug;\n          }\n        }\n      });\n    });\n  }\n\n  // Make projects data available globally for router\n  window.__PROJECTS_DATA__ = projectsData;\n\n  if (document.readyState === 'loading') {\n    document.addEventListener('DOMContentLoaded', function() {\n      initProjectFilters();\n      initProjectCards();\n    });\n  } else {\n    initProjectFilters();\n    initProjectCards();\n  }\n})();<\/script>"])), maybeRenderHead(), subtitle, categories.map((category) => renderTemplate`<button${addAttribute(`project-filter text-[10px] md:text-sm font-medium transition-colors relative pb-1 whitespace-nowrap ${category === "Tümü" ? "text-slate-900 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-slate-900 active" : "text-slate-400 hover:text-slate-600"}`, "class")}${addAttribute(category, "data-category")}> ${category} </button>`), projects.map((project) => renderTemplate`<div class="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 flex flex-col h-full project-card"${addAttribute(project.id, "data-project-id")}${addAttribute(project.slug, "data-project-slug")}${addAttribute(project.category, "data-category")}> <!-- Image --> <div class="relative h-24 md:h-64 overflow-hidden"> <img${addAttribute(withBase(project.image), "src")}${addAttribute(project.title, "alt")} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"> <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/30 transition-colors duration-500"></div> </div> <!-- Content --> <div class="p-2 md:p-8 flex flex-col flex-grow"> <span class="text-[7px] md:text-[10px] font-bold tracking-[0.1em] md:tracking-[0.2em] text-slate-400 uppercase mb-0.5 md:mb-3 block truncate"> ${project.category} </span> <h3 class="text-[10px] md:text-xl font-semibold mb-0.5 md:mb-3 text-slate-900 leading-tight group-hover:text-slate-700 transition-colors line-clamp-1 md:line-clamp-none"> ${project.title} </h3> <!-- Mobilde 1 satir aciklama --> <p class="text-[8px] md:text-sm text-slate-500 font-light leading-relaxed mb-1 md:mb-6 line-clamp-1 md:line-clamp-2"> ${project.description} </p> <div class="mt-auto flex flex-col md:flex-row md:items-center md:justify-between gap-0.5 md:gap-0"> <!-- Konum - mobilde tam gorunsun --> <div class="flex items-center gap-0.5 md:gap-1 text-[7px] md:text-[10px] text-slate-400 md:order-2"> <svg class="h-2 w-2 md:h-3 md:w-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> <span class="truncate">${project.location}</span> </div> <div class="hidden md:flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-900 transition-colors md:order-1"> <span>Detaylar</span> <svg class="h-4 w-4 group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </div> </div> </div> </div>`), defineScriptVars({ projectsData: projects, basePath }));
 }, "/app/site/src/components/Projects.astro", void 0);
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
@@ -364,6 +375,17 @@ var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __f
 var _a;
 const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate(_a || (_a = __template(["<!-- Project Modal -->", '<div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-2 md:p-4 overflow-hidden"> <div id="project-modal-overlay" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div> <!-- Close Button - Fixed Position --> <button id="project-modal-close" class="fixed top-3 right-3 md:top-4 md:right-4 z-[60] p-2 bg-slate-900/90 backdrop-blur-md text-white rounded-full shadow-lg hover:bg-slate-800 transition-colors" aria-label="Kapat"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> <div id="project-modal-content" class="relative bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto overflow-x-hidden z-10"> <!-- Modal Body (dynamically populated) --> <div id="project-modal-body"></div> </div> </div> <!-- Lightbox --> <div id="project-lightbox" class="fixed inset-0 z-[100] hidden overflow-hidden"> <div id="project-lightbox-overlay" class="absolute inset-0 bg-black/80"></div> <!-- Close Button --> <button id="project-lightbox-close" class="fixed top-3 right-3 md:top-4 md:right-4 p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> <!-- Navigation Arrows --> <button id="project-lightbox-prev" class="fixed left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10 hidden"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path> </svg> </button> <button id="project-lightbox-next" class="fixed right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10 hidden"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </button> <!-- Image Container --> <div class="relative w-full h-full flex items-center justify-center p-4 md:p-16"> <img id="project-lightbox-image" class="max-w-full max-h-full object-contain select-none" alt=""> </div> <!-- Counter --> <div id="project-lightbox-counter" class="fixed bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-xs md:text-sm bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm"></div> </div> <script>(function(){', `
+
+  // HTML escape - XSS koruması (CMS verisini innerHTML'e yerleştirmeden önce)
+  function esc(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
 
   // Path helper - image path'leri base path ile prefix'le
   function bp(path) {
@@ -375,21 +397,21 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
   var _projectLightboxOpen = false;
 
   function openProjectModal(projectId) {
-    const project = projectsData.find(function(p) { return p.id === projectId; });
+    var project = projectsData.find(function(p) { return p.id === projectId; });
     if (!project) return;
 
-    const modal = document.getElementById('project-modal');
-    const modalBody = document.getElementById('project-modal-body');
+    var modal = document.getElementById('project-modal');
+    var modalBody = document.getElementById('project-modal-body');
     if (!modal || !modalBody) return;
 
-    let currentImageIndex = 0;
+    var currentImageIndex = 0;
 
     function renderModal() {
-      const currentImage = bp(project.images[currentImageIndex] || project.image);
+      var currentImage = bp(project.images[currentImageIndex] || project.image);
 
       modalBody.innerHTML =
         '<div class="relative h-48 md:h-96 bg-gray-900">' +
-          '<img src="' + currentImage + '" alt="' + project.title + '" class="w-full h-full object-cover" id="project-modal-main-image" />' +
+          '<img src="' + currentImage + '" alt="' + esc(project.title) + '" class="w-full h-full object-cover" id="project-modal-main-image" />' +
           /* Lightbox trigger - sadece resim alani */
           '<div class="absolute inset-0 flex items-center justify-center cursor-pointer" id="project-modal-lightbox-trigger">' +
             '<div class="opacity-0 hover:opacity-100 transition-opacity bg-black/20 absolute inset-0 flex items-center justify-center">' +
@@ -424,10 +446,10 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
         '</div>' +
         '<div class="p-4 md:p-8">' +
           '<div class="inline-block px-3 py-1 bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 rounded-full text-xs md:text-sm mb-3 md:mb-4 border border-slate-300/50">' +
-            project.category +
+            esc(project.category) +
           '</div>' +
           '<h2 class="text-xl md:text-3xl mb-3 md:mb-4 text-gray-900">' +
-            project.title +
+            esc(project.title) +
           '</h2>' +
           '<div class="flex flex-wrap gap-3 md:gap-4 mb-4 md:mb-6 text-gray-600 text-sm">' +
             (project.location ?
@@ -436,7 +458,7 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                   '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>' +
                   '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>' +
                 '</svg>' +
-                '<span>' + project.location + '</span>' +
+                '<span>' + esc(project.location) + '</span>' +
               '</div>'
             : '') +
             (project.year ?
@@ -444,13 +466,13 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                 '<svg class="h-4 w-4 md:h-5 md:w-5 text-slate-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
                   '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>' +
                 '</svg>' +
-                '<span>' + project.year + '</span>' +
+                '<span>' + esc(project.year) + '</span>' +
               '</div>'
             : '') +
           '</div>' +
           '<div class="prose max-w-none">' +
             '<p class="text-sm md:text-lg text-gray-700 leading-relaxed">' +
-              (project.details || project.description) +
+              esc(project.details || project.description) +
             '</p>' +
           '</div>' +
           (project.images.length > 1 ?
@@ -459,7 +481,7 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                 return '<button class="project-modal-thumb aspect-video rounded-lg overflow-hidden border-2 transition-all ' +
                   (index === currentImageIndex ? 'border-slate-600 shadow-lg' : 'border-transparent hover:border-gray-300') +
                   '" data-index="' + index + '">' +
-                  '<img src="' + bp(image) + '" alt="' + project.title + ' ' + (index + 1) + '" class="w-full h-full object-cover" />' +
+                  '<img src="' + bp(image) + '" alt="' + esc(project.title) + ' ' + (index + 1) + '" class="w-full h-full object-cover" />' +
                 '</button>';
               }).join('') +
             '</div>'
@@ -668,6 +690,17 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
   });
 })();<\/script>`], ["<!-- Project Modal -->", '<div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-2 md:p-4 overflow-hidden"> <div id="project-modal-overlay" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div> <!-- Close Button - Fixed Position --> <button id="project-modal-close" class="fixed top-3 right-3 md:top-4 md:right-4 z-[60] p-2 bg-slate-900/90 backdrop-blur-md text-white rounded-full shadow-lg hover:bg-slate-800 transition-colors" aria-label="Kapat"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> <div id="project-modal-content" class="relative bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto overflow-x-hidden z-10"> <!-- Modal Body (dynamically populated) --> <div id="project-modal-body"></div> </div> </div> <!-- Lightbox --> <div id="project-lightbox" class="fixed inset-0 z-[100] hidden overflow-hidden"> <div id="project-lightbox-overlay" class="absolute inset-0 bg-black/80"></div> <!-- Close Button --> <button id="project-lightbox-close" class="fixed top-3 right-3 md:top-4 md:right-4 p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> <!-- Navigation Arrows --> <button id="project-lightbox-prev" class="fixed left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10 hidden"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path> </svg> </button> <button id="project-lightbox-next" class="fixed right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 md:p-3 bg-white/10 backdrop-blur-md text-white rounded-full hover:bg-white/20 transition-colors z-10 hidden"> <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </button> <!-- Image Container --> <div class="relative w-full h-full flex items-center justify-center p-4 md:p-16"> <img id="project-lightbox-image" class="max-w-full max-h-full object-contain select-none" alt=""> </div> <!-- Counter --> <div id="project-lightbox-counter" class="fixed bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-xs md:text-sm bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm"></div> </div> <script>(function(){', `
 
+  // HTML escape - XSS koruması (CMS verisini innerHTML'e yerleştirmeden önce)
+  function esc(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   // Path helper - image path'leri base path ile prefix'le
   function bp(path) {
     if (!path || path.startsWith('http')) return path;
@@ -678,21 +711,21 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
   var _projectLightboxOpen = false;
 
   function openProjectModal(projectId) {
-    const project = projectsData.find(function(p) { return p.id === projectId; });
+    var project = projectsData.find(function(p) { return p.id === projectId; });
     if (!project) return;
 
-    const modal = document.getElementById('project-modal');
-    const modalBody = document.getElementById('project-modal-body');
+    var modal = document.getElementById('project-modal');
+    var modalBody = document.getElementById('project-modal-body');
     if (!modal || !modalBody) return;
 
-    let currentImageIndex = 0;
+    var currentImageIndex = 0;
 
     function renderModal() {
-      const currentImage = bp(project.images[currentImageIndex] || project.image);
+      var currentImage = bp(project.images[currentImageIndex] || project.image);
 
       modalBody.innerHTML =
         '<div class="relative h-48 md:h-96 bg-gray-900">' +
-          '<img src="' + currentImage + '" alt="' + project.title + '" class="w-full h-full object-cover" id="project-modal-main-image" />' +
+          '<img src="' + currentImage + '" alt="' + esc(project.title) + '" class="w-full h-full object-cover" id="project-modal-main-image" />' +
           /* Lightbox trigger - sadece resim alani */
           '<div class="absolute inset-0 flex items-center justify-center cursor-pointer" id="project-modal-lightbox-trigger">' +
             '<div class="opacity-0 hover:opacity-100 transition-opacity bg-black/20 absolute inset-0 flex items-center justify-center">' +
@@ -727,10 +760,10 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
         '</div>' +
         '<div class="p-4 md:p-8">' +
           '<div class="inline-block px-3 py-1 bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 rounded-full text-xs md:text-sm mb-3 md:mb-4 border border-slate-300/50">' +
-            project.category +
+            esc(project.category) +
           '</div>' +
           '<h2 class="text-xl md:text-3xl mb-3 md:mb-4 text-gray-900">' +
-            project.title +
+            esc(project.title) +
           '</h2>' +
           '<div class="flex flex-wrap gap-3 md:gap-4 mb-4 md:mb-6 text-gray-600 text-sm">' +
             (project.location ?
@@ -739,7 +772,7 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                   '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>' +
                   '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>' +
                 '</svg>' +
-                '<span>' + project.location + '</span>' +
+                '<span>' + esc(project.location) + '</span>' +
               '</div>'
             : '') +
             (project.year ?
@@ -747,13 +780,13 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                 '<svg class="h-4 w-4 md:h-5 md:w-5 text-slate-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
                   '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>' +
                 '</svg>' +
-                '<span>' + project.year + '</span>' +
+                '<span>' + esc(project.year) + '</span>' +
               '</div>'
             : '') +
           '</div>' +
           '<div class="prose max-w-none">' +
             '<p class="text-sm md:text-lg text-gray-700 leading-relaxed">' +
-              (project.details || project.description) +
+              esc(project.details || project.description) +
             '</p>' +
           '</div>' +
           (project.images.length > 1 ?
@@ -762,7 +795,7 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                 return '<button class="project-modal-thumb aspect-video rounded-lg overflow-hidden border-2 transition-all ' +
                   (index === currentImageIndex ? 'border-slate-600 shadow-lg' : 'border-transparent hover:border-gray-300') +
                   '" data-index="' + index + '">' +
-                  '<img src="' + bp(image) + '" alt="' + project.title + ' ' + (index + 1) + '" class="w-full h-full object-cover" />' +
+                  '<img src="' + bp(image) + '" alt="' + esc(project.title) + ' ' + (index + 1) + '" class="w-full h-full object-cover" />' +
                 '</button>';
               }).join('') +
             '</div>'
@@ -976,7 +1009,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
   const subtitle = (_a2 = siteData.sections) == null ? void 0 : _a2.contactSubtitle;
   const locations = ((_b2 = siteData.contact) == null ? void 0 : _b2.locations) || [];
   const showContactForm = ((_c = siteData.contact) == null ? void 0 : _c.showContactForm) !== false;
-  return renderTemplate`${maybeRenderHead()}<section id="contact" class="py-10 md:py-24 bg-gray-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- Section Header --> <div class="text-center mb-8 md:mb-16"> <h2 class="text-2xl md:text-5xl mb-3 text-slate-900 font-light tracking-tight">
+  return renderTemplate`${maybeRenderHead()}<section id="contact" aria-label="İletişim" class="py-10 md:py-24 bg-gray-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <!-- Section Header --> <div class="text-center mb-8 md:mb-16"> <h2 class="text-2xl md:text-5xl mb-3 text-slate-900 font-light tracking-tight">
 İletişim
 </h2> <div class="w-12 h-0.5 bg-slate-400 mx-auto mb-4 md:mb-6"></div> <p class="text-xs md:text-lg text-slate-500 max-w-2xl mx-auto font-light px-4"> ${subtitle} </p> </div> <!-- Lokasyonlar --> <div class="grid md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12"> ${locations.map((loc) => renderTemplate`<div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"> <!-- Konum Başlığı --> <div class="bg-slate-900 px-6 py-4"> <h3 class="text-lg font-semibold text-white flex items-center gap-2"> <svg class="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path> </svg> ${loc.name} </h3> </div> <div class="p-6 space-y-5"> <!-- Adres --> <div class="flex items-start gap-3"> <div class="flex-shrink-0 w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center"> <svg class="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> </div> <div> <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Adres</div> <div class="text-sm text-slate-700 leading-relaxed">${loc.address}</div> </div> </div> <!-- Telefon --> <div class="flex items-start gap-3"> <div class="flex-shrink-0 w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center"> <svg class="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path> </svg> </div> <div> <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Telefon</div> <a${addAttribute(`tel:${loc.phone.replace(/\s/g, "")}`, "href")} class="text-sm text-slate-700 hover:text-slate-900 transition-colors">${loc.phone}</a> </div> </div> <!-- Faks --> ${loc.fax && renderTemplate`<div class="flex items-start gap-3"> <div class="flex-shrink-0 w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center"> <svg class="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path> </svg> </div> <div> <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Faks</div> <div class="text-sm text-slate-700">${loc.fax}</div> </div> </div>`} <!-- Çalışma Saatleri --> <div class="flex items-start gap-3"> <div class="flex-shrink-0 w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center"> <svg class="h-5 w-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg> </div> <div> <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Çalışma Saatleri</div> <div class="text-sm text-slate-700">${loc.workingHours}</div> </div> </div> <!-- Harita --> <div class="rounded-lg overflow-hidden h-48 border border-slate-200 mt-4"> ${loc.mapUrl ? renderTemplate`<iframe${addAttribute(loc.mapUrl, "src")} class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"${addAttribute(`${loc.name} Konum`, "title")}></iframe>` : renderTemplate`<div class="w-full h-full bg-slate-50 flex items-center justify-center"> <div class="text-center text-slate-400"> <svg class="h-10 w-10 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> <p class="text-sm">Harita</p> </div> </div>`} </div> </div> </div>`)} </div> <!-- İletişim Formu (opsiyonel, ortalı) --> ${showContactForm} </div> </section> ${renderScript($$result, "/app/site/src/components/Contact.astro?astro&type=script&index=0&lang.ts")}`;
 }, "/app/site/src/components/Contact.astro", void 0);
