@@ -1,7 +1,7 @@
 import { c as createComponent, a as renderTemplate, b as addAttribute, m as maybeRenderHead, e as defineScriptVars, f as renderScript } from "./astro/server.g7k5KnFz.js";
 import "piccolore";
 import "clsx";
-import { w as withBase, s as siteData, c as basePath } from "./Footer.DX_pd56e.js";
+import { w as withBase, s as siteData, c as basePath } from "./Footer.DAjNiyI8.js";
 import { p as projects } from "./projects.CWSLyQrC.js";
 /* empty css                                    */
 var __freeze$3 = Object.freeze;
@@ -190,6 +190,14 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
             'Büyüt' +
           '</div>' +
         '</div>' +
+        /* Mobile zoom indicator - tap to enlarge hint (mobile/tablet only) */
+        '<div class="absolute top-2 left-2 md:hidden pointer-events-none z-[5]">' +
+          '<div class="bg-black/50 backdrop-blur-sm rounded-full p-1.5">' +
+            '<svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+              '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>' +
+            '</svg>' +
+          '</div>' +
+        '</div>' +
       '</div>' +
       '<div class="p-4 md:p-10">' +
         '<p class="text-slate-600 text-sm md:text-lg font-light leading-relaxed mb-6 md:mb-8">' + escService(service.description) + '</p>' +
@@ -288,7 +296,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
   } else {
     initServiceCards();
   }
-})();<\/script>`])), maybeRenderHead(), subtitle, services.map((service) => renderTemplate`<div class="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 flex flex-col h-full service-card"${addAttribute(service.id, "data-service-id")} data-astro-cid-g5jplrhu> <!-- Image --> <div class="relative h-24 md:h-56 overflow-hidden" data-astro-cid-g5jplrhu> <img${addAttribute(withBase(thumbUrl(service.image) || "/images/placeholder.jpg"), "src")}${addAttribute(service.title, "alt")} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-astro-cid-g5jplrhu> <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/30 transition-colors duration-500" data-astro-cid-g5jplrhu></div> </div> <!-- Content --> <div class="p-2 md:p-8 flex flex-col flex-grow" data-astro-cid-g5jplrhu> <h3 class="text-[10px] md:text-xl font-semibold mb-1 md:mb-3 text-slate-900 leading-tight group-hover:text-slate-700 transition-colors line-clamp-2 md:line-clamp-none" data-astro-cid-g5jplrhu> ${service.title} </h3> <p class="hidden md:block text-slate-500 text-sm font-light leading-relaxed mb-6 service-desc" data-astro-cid-g5jplrhu> ${service.description} </p> <div class="mt-auto inline-flex items-center text-[8px] md:text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-900 transition-colors" data-astro-cid-g5jplrhu> <span class="hidden md:inline" data-astro-cid-g5jplrhu>Detaylar</span> <svg class="ml-1 h-2 w-2 md:h-4 md:w-4 group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-g5jplrhu> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-g5jplrhu></path> </svg> </div> </div> </div>`), defineScriptVars({ servicesData: services, basePath }));
+})();<\/script>`])), maybeRenderHead(), subtitle, services.map((service) => renderTemplate`<div class="group cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 flex flex-col h-full service-card"${addAttribute(service.id, "data-service-id")} data-astro-cid-g5jplrhu> <!-- Image --> <div class="relative h-24 md:h-56 overflow-hidden" data-astro-cid-g5jplrhu> <img${addAttribute(withBase(thumbUrl(service.image) || "/images/placeholder.jpg"), "src")}${addAttribute(service.title, "alt")} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-astro-cid-g5jplrhu> <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/30 transition-colors duration-500" data-astro-cid-g5jplrhu></div> </div> <!-- Content --> <div class="p-2 md:p-8 flex flex-col flex-grow" data-astro-cid-g5jplrhu> <h3 class="text-[10px] md:text-xl font-semibold mb-1 md:mb-3 text-slate-900 leading-tight group-hover:text-slate-700 transition-colors line-clamp-2 md:line-clamp-none" data-astro-cid-g5jplrhu> ${service.title} </h3> <p class="text-slate-500 text-[9px] md:text-sm font-light leading-relaxed mb-1 md:mb-6 service-desc" data-astro-cid-g5jplrhu> ${service.description} </p> <div class="mt-auto hidden md:inline-flex items-center text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-900 transition-colors" data-astro-cid-g5jplrhu> <span data-astro-cid-g5jplrhu>Detaylar</span> <svg class="ml-1 h-4 w-4 group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-g5jplrhu> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-g5jplrhu></path> </svg> </div> </div> </div>`), defineScriptVars({ servicesData: services, basePath }));
 }, "/app/site/src/components/Services.astro", void 0);
 var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
@@ -355,6 +363,14 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
               '</div>' +
             '</div>' +
           '</div>' +
+          /* Mobile zoom indicator - tap to enlarge hint (mobile/tablet only) */
+          '<div class="absolute top-2 left-2 md:hidden pointer-events-none z-[5]">' +
+            '<div class="bg-black/50 backdrop-blur-sm rounded-full p-1.5">' +
+              '<svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+                '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>' +
+              '</svg>' +
+            '</div>' +
+          '</div>' +
           /* Navigation Arrows */
           (project.images.length > 1 ?
             '<button class="project-nav-btn absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-1.5 md:p-2 bg-white/90 rounded-full hover:bg-white transition-colors z-10" data-dir="prev" aria-label="Önceki">' +
@@ -367,7 +383,7 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                 '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>' +
               '</svg>' +
             '</button>' +
-            '<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10" id="project-modal-indicators">' +
+            '<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10 bg-black/30 backdrop-blur-sm px-2.5 py-1.5 rounded-full" id="project-modal-indicators">' +
               project.images.map(function(_, index) {
                 return '<button class="project-modal-indicator w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all ' +
                   (index === currentImageIndex ? 'bg-white w-6 md:w-8' : 'bg-white/50 hover:bg-white/75') +
@@ -669,6 +685,14 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
               '</div>' +
             '</div>' +
           '</div>' +
+          /* Mobile zoom indicator - tap to enlarge hint (mobile/tablet only) */
+          '<div class="absolute top-2 left-2 md:hidden pointer-events-none z-[5]">' +
+            '<div class="bg-black/50 backdrop-blur-sm rounded-full p-1.5">' +
+              '<svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+                '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>' +
+              '</svg>' +
+            '</div>' +
+          '</div>' +
           /* Navigation Arrows */
           (project.images.length > 1 ?
             '<button class="project-nav-btn absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-1.5 md:p-2 bg-white/90 rounded-full hover:bg-white transition-colors z-10" data-dir="prev" aria-label="Önceki">' +
@@ -681,7 +705,7 @@ const $$ProjectModal = createComponent(($$result, $$props, $$slots) => {
                 '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>' +
               '</svg>' +
             '</button>' +
-            '<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10" id="project-modal-indicators">' +
+            '<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10 bg-black/30 backdrop-blur-sm px-2.5 py-1.5 rounded-full" id="project-modal-indicators">' +
               project.images.map(function(_, index) {
                 return '<button class="project-modal-indicator w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all ' +
                   (index === currentImageIndex ? 'bg-white w-6 md:w-8' : 'bg-white/50 hover:bg-white/75') +

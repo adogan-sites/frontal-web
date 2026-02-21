@@ -43,6 +43,7 @@
 
   /**
    * Scroll to section
+   * Offset, CSS scroll-padding-top ile yonetilir (global.css)
    */
   function scrollToSection(id) {
     var element = document.getElementById(id);
@@ -115,6 +116,12 @@
     if (projectMatch) {
       var slug = projectMatch[1];
 
+      // Bu sayfada #projects section'i yoksa tam sayfa yuklemesi yap
+      if (!document.getElementById('projects')) {
+        window.location.href = fullPath;
+        return;
+      }
+
       if (!skipScroll) {
         scrollToSection('projects');
       }
@@ -137,6 +144,11 @@
       return;
     }
     if (route && route.target) {
+      // Hedef section bu sayfada yoksa tam sayfa yuklemesi yap
+      if (!document.getElementById(route.target)) {
+        window.location.href = fullPath;
+        return;
+      }
       scrollToSection(route.target);
     }
   }
