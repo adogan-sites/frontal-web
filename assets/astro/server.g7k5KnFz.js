@@ -200,7 +200,7 @@ function createComponent(arg1, moduleId, propagation) {
     return createComponentWithOptions(arg1);
   }
 }
-const ASTRO_VERSION = "5.17.2";
+const ASTRO_VERSION = "5.17.3";
 const NOOP_MIDDLEWARE_HEADER = "X-Astro-Noop";
 function createAstroGlobFn() {
   const globHandler = (importMetaGlobResult) => {
@@ -1980,13 +1980,13 @@ async function renderScript(result, id) {
 export {
   NOOP_MIDDLEWARE_HEADER as N,
   renderTemplate as a,
-  createAstro as b,
+  addAttribute as b,
   createComponent as c,
-  defineScriptVars as d,
-  renderScript as e,
-  renderSlot as f,
-  renderHead as g,
-  addAttribute as h,
+  createAstro as d,
+  defineScriptVars as e,
+  renderScript as f,
+  renderSlot as g,
+  renderHead as h,
   decodeKey as i,
   maybeRenderHead as m,
   renderComponent as r,

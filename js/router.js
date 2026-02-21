@@ -11,12 +11,16 @@
   var base = window.__BASE_PATH || '';
 
   // Route mapping (base path'siz, saf path'ler)
+  // target: null → tam sayfa yuklemesi (yasal sayfalar gibi bagimsiz sayfalar)
   var routes = {
     '/': { target: 'hero' },
     '/hakkimizda': { target: 'about' },
     '/faaliyet-alanlari': { target: 'services' },
     '/projeler': { target: 'projects' },
-    '/iletisim': { target: 'contact' }
+    '/iletisim': { target: 'contact' },
+    '/gizlilik-politikasi': { target: null },
+    '/kullanim-kosullari': { target: null },
+    '/kvkk': { target: null }
   };
 
   /**
@@ -127,6 +131,11 @@
 
     // Normal route'lar
     var route = routes[path];
+    if (route && route.target === null) {
+      // Bagimsiz sayfa (yasal sayfalar vb.) — tam sayfa yuklemesi
+      window.location.href = fullPath;
+      return;
+    }
     if (route && route.target) {
       scrollToSection(route.target);
     }
