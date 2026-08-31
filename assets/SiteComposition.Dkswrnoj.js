@@ -1,6 +1,6 @@
 import { c as createComponent, a as renderTemplate, b as addAttribute, m as maybeRenderHead, d as createAstro, r as renderComponent, e as defineScriptVars, f as renderScript } from "./astro/server.g7k5KnFz.js";
 import "piccolore";
-import { w as withBase, s as siteData, c as basePath, n as normalizeSectionOrder, a as $$Header, b as $$Footer } from "./Footer.BC7M9La4.js";
+import { w as withBase, s as siteData, c as basePath, n as normalizeSectionOrder, a as $$Header, b as $$Footer } from "./Footer.BV_uDX7Y.js";
 import "clsx";
 import { p as projects } from "./projects.Bx99RbN4.js";
 /* empty css                                    */
