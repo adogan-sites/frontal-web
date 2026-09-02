@@ -1979,12 +1979,12 @@ async function renderScript(result, id) {
 "-0123456789_".split("").reduce((v, c) => (v[c.charCodeAt(0)] = c, v), []);
 export {
   NOOP_MIDDLEWARE_HEADER as N,
-  renderTemplate as a,
-  addAttribute as b,
-  createComponent as c,
-  createAstro as d,
-  defineScriptVars as e,
-  renderScript as f,
+  createComponent as a,
+  renderTemplate as b,
+  createAstro as c,
+  addAttribute as d,
+  renderScript as e,
+  defineScriptVars as f,
   renderSlot as g,
   renderHead as h,
   decodeKey as i,

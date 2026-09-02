@@ -24,14 +24,21 @@
   };
 
   /**
-   * Path'ten base prefix'i cikar (route matching icin)
+   * Path'ten base prefix'i cikar ve sondaki slash'i kirp (route matching icin)
+   *
+   * Tum ic linkler artik `/projeler/` bicimindedir (utils/paths.js -> withBase).
+   * `routes` tablosu ve proje regex'i slash'siz yazildigi icin eslestirme
+   * oncesi normalize edilmezse hicbir rota tutmaz.
    */
   function stripBase(path) {
+    var result = path;
     if (base && path.indexOf(base) === 0) {
-      var stripped = path.substring(base.length);
-      return stripped || '/';
+      result = path.substring(base.length) || '/';
     }
-    return path;
+    if (result.length > 1 && result.endsWith('/')) {
+      result = result.slice(0, -1);
+    }
+    return result || '/';
   }
 
   /**
@@ -76,14 +83,33 @@
   }
 
   /**
-   * Close project modal if open
+   * Open service modal by slug
    */
-  function closeProjectModal() {
-    var modal = document.getElementById('project-modal');
-    if (modal && !modal.classList.contains('hidden')) {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-      document.body.style.overflow = 'unset';
+  function openServiceBySlug(slug) {
+    document.dispatchEvent(new CustomEvent('openServiceModal', {
+      detail: { serviceSlug: slug }
+    }));
+  }
+
+  /**
+   * Close any open detail modal.
+   *
+   * Scroll kilidi `html.modal-open { overflow: hidden }` ile kuruluyor;
+   * burasi eskiden `body.style.overflow`'a yaziyordu ve kimse orayi okumadigi
+   * icin modal router uzerinden kapatildiginda sayfa kilitli kaliyordu.
+   */
+  function closeDetailModals() {
+    var closed = false;
+    ['project-modal', 'service-modal'].forEach(function(id) {
+      var modal = document.getElementById(id);
+      if (modal && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        closed = true;
+      }
+    });
+    if (closed) {
+      document.documentElement.classList.remove('modal-open');
     }
   }
 
@@ -133,8 +159,25 @@
       return;
     }
 
-    // Proje detayindan cikildiysa modali kapat
-    closeProjectModal();
+    // Faaliyet detay sayfasi
+    var serviceMatch = path.match(/^\/faaliyet-alanlari\/([^\/]+)$/);
+    if (serviceMatch) {
+      if (!document.getElementById('services')) {
+        window.location.href = fullPath;
+        return;
+      }
+      if (!skipScroll) {
+        scrollToSection('services');
+      }
+      var serviceDelay = skipScroll ? 0 : 300;
+      setTimeout(function() {
+        openServiceBySlug(serviceMatch[1]);
+      }, serviceDelay);
+      return;
+    }
+
+    // Detaydan cikildiysa acik modali kapat
+    closeDetailModals();
 
     // Normal route'lar
     var route = routes[path];
@@ -179,6 +222,10 @@
 
     // Intercept link clicks - base prefix ile baslayan linkleri yakala
     document.addEventListener('click', function(e) {
+      // Ctrl/Cmd/Shift + tik ve orta tik tarayiciya birakilir (yeni sekme).
+      // Kartlar artik gercek <a> oldugu icin bu davranis onemli hale geldi.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+
       // Base path varsa hem base ile baslayanlari hem / ile baslayanlari yakala
       var selector = base ? 'a[href^="' + base + '/"], a[href^="/"]' : 'a[href^="/"]';
       var link = e.target.closest(selector);

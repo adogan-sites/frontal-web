@@ -1,4 +1,6 @@
+# Test ortamı — indekslenmesi kasıtlı olarak engellendi.
+# Gerçek alan adına geçildiğinde (DEPLOY_SITE_URL) bu blok kendiliğinden kalkar.
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://adogan-sites.github.io/sitemap.xml
+Sitemap: https://adogan-sites.github.io/frontal-web/sitemap.xml
