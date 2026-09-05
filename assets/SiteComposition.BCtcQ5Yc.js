@@ -14,13 +14,11 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-import { c as createAstro, a as createComponent, b as renderTemplate, d as addAttribute, r as renderComponent, m as maybeRenderHead, e as renderScript, u as unescapeHTML, f as defineScriptVars } from "./astro/server.Djac9TLI.js";
-import "piccolore";
-import { n as normalizeSectionOrder, a as $$Header, c as $$Footer } from "./Footer.Bg9zxgZF.js";
+import { c as createAstro, a as createComponent, b as renderTemplate, d as addAttribute, r as renderComponent, m as maybeRenderHead, e as renderScript, u as unescapeHTML, f as defineScriptVars } from "./astro/server.CAGUKK1p.js";
+import { n as normalizeSectionOrder, a as $$Header, c as $$Footer } from "./Footer.OB-YOdfi.js";
 import { s as siteData } from "./site.CbRSZzkL.js";
 import { w as withBase, b as basePath } from "./paths.tphEKz_F.js";
 import { p as publishedOnly, a as projects, r as rawServices } from "./published.DKPgJ_1P.js";
-import "clsx";
 import { w as withSlugs } from "./slug.B0LQY6TY.js";
 /* empty css                                    */
 var __freeze$3 = Object.freeze;

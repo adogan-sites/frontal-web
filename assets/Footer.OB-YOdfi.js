@@ -1,6 +1,4 @@
-import { c as createAstro, a as createComponent, b as renderTemplate, f as defineScriptVars, e as renderScript, g as renderSlot, h as renderHead, u as unescapeHTML, d as addAttribute, m as maybeRenderHead } from "./astro/server.Djac9TLI.js";
-import "piccolore";
-import "clsx";
+import { c as createAstro, a as createComponent, b as renderTemplate, f as defineScriptVars, e as renderScript, g as renderSlot, h as renderHead, u as unescapeHTML, d as addAttribute, m as maybeRenderHead } from "./astro/server.CAGUKK1p.js";
 /* empty css                                    */
 import { s as siteData } from "./site.CbRSZzkL.js";
 import { w as withBase, b as basePath } from "./paths.tphEKz_F.js";
